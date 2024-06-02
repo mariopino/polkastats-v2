@@ -74,6 +74,20 @@ export default {
    ** Build configuration
    */
   build: {
+    babel: {
+      presets() {
+        return [
+          [
+            require.resolve("@nuxt/babel-preset-app"),
+            // require.resolve('@nuxt/babel-preset-app-edge'), // For nuxt-edge users
+            {
+              buildTarget: "client",
+              corejs: { version: 3 }
+            }
+          ]
+        ]
+      }
+    },
     /*
      ** You can extend webpack config here
      */

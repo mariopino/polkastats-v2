@@ -12,16 +12,16 @@ $ git clone https://github.com/Colm3na/polkastats-v2.git
 $ cd polkastats-v2
 
 # Install dependencies
-$ npm install
+$ yarn install
 
 # Serve with hot reload at localhost:3000
-$ npm run dev
+$ yarn run dev
 
 # Build for production
-$ npm run build
+$ yarn run build
 
 # generate static project
-$ npm run generate
+$ yarn run generate
 ```
 
 ## Build backend
